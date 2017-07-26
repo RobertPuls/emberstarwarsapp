@@ -1,0 +1,21 @@
+<h1>Fun Star Wars Movie Details!</h1> <br>
+<nav>
+  {{#tooltip-message message="Click for Movie List" size="small" position="right"}}
+    {{#link-to "home.movies"}}Movies{{/link-to}}
+  {{/tooltip-message}}
+  {{#tooltip-message message="Click for Characters" size="small" position="right"}}
+    {{#link-to "home.characters"}}Characters{{/link-to}}
+  {{/tooltip-message}}
+  {{#tooltip-message message="Watch the new Trailer" size="small" position="right"}}
+    {{#link-to "home.video"}}Trailer{{/link-to}}
+  {{/tooltip-message}}
+</nav> <br>
+
+<p>
+  This is a Star Wars movie details site.
+  You can read all about the individual movies in the series and also find interesting info about many of the characters from your favorite episodes. <br>
+  May the Force Be With You!
+</p>
+<div class="main-content">
+  {{outlet}}
+</div>
