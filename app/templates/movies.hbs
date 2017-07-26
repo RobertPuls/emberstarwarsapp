@@ -1,0 +1,9 @@
+<ul>
+  {{#each model as |movie|}}
+    <li>
+      {{#movie-list-entry movie=movie}}
+      {{/movie-list-entry}}
+    </li>
+  {{/each}}
+</ul>
+{{outlet}}
